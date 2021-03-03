@@ -1,0 +1,54 @@
+ <?php
+
+namespace App\Http\Controllers;
+
+use App\new_step;
+
+use Illuminate\Http\Request;
+class newstepController extends Controller
+{
+    {
+
+
+
+        $news_step=new new_step;
+        
+       
+            $ration_cards->Registration_no=time();
+            $ration_cards->ration_card_no=time();
+            $ration_cards->Address_Door_number=request('door_number');
+            $ration_cards->Address_sub_locality_1=request('sub_number');
+            $ration_cards->Address_sub_locality_2=request('sub_number');
+            $ration_cards->Address_ward_number=request('ward_number');
+            $ration_cards->Address_location=request('location');
+            $ration_cards->Address_select_sub_District=request('select_sub_District');
+            $ration_cards->Address_District=request('District');
+            $ration_cards->Address_state=request('state');
+            $ration_cards->Address_pin_code=request('pin_code');
+            $ration_cards->Address_country=request('country');
+            $ration_cards->Address_police_Station=request('police_Station');
+            $ration_cards->Address_post_office=request('post_office');
+
+            $ration_cards->Name=request('name');
+            $ration_cards->father_name=request('fathername');
+            $ration_cards->Mother_name=request('Mothername');
+            $ration_cards->Date_Birth=request('dob');
+
+            $ration_cards->Gender=request('gender');
+
+            $ration_cards->Age_each_member_family=request('Age_each_member_family');
+            $ration_cards->Relation_karta_family=request('Relation_karta_family');
+            $ration_cards->Monthly_income_karta=request('monthly_income_karta');
+            $ration_cards->Occupation=request('occupation');
+            $ration_cards->Religion=request('Religion');
+
+            $ration_cards->electricity_Connection=request('electricity_connection');
+            $ration_cards->Cooking_Gas_Connection=request('cooking_gas_connection');
+            //$ration_cards->Residing_period_above_Address=request('');
+             /// $ration_cards->Remark_forwarder=request('');
+            $ration_cards->save();
+            $ration_cards->Registration_no= $ration_cards->id;
+            $ration_cards->save();
+
+
+    }

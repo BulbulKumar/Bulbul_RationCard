@@ -1,0 +1,21 @@
+h1{
+    text-align:center;
+    background-color:slateblue;
+    font-size:40px;
+    font-family:arial;
+}
+h2{
+    background-color:black;
+    text-align:center;
+    right: 30px;
+
+}
+form{
+    color:brown;
+    text-align:left;
+    font-family:40px;
+    position:absolute;
+    border-style:solid;
+    border-right:center;
+    
+}
